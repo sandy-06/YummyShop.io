@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
 import Homepage from './pages/Homepage';
-import Gear from './pages/Gear';
-import Toys from './pages/Toys';
-import Health from './pages/Health';
+
 import Footer from './Footer';
-import Food from './pages/Food';
+import Signup from './SignUp'
 import Login from './Login';
 import Checkout from './pages/Checkout';
 
 export default function StoreContainer() {
-    const [currentPage, setCurrentPage] = useState('Login');
+    const [currentPage, setCurrentPage] = useState('Homepage');
 
     const page = 'Homepage'
 
@@ -23,31 +21,22 @@ export default function StoreContainer() {
         if (currentPage === 'Homepage') {
             return <Homepage />;
         }
-        if (currentPage === 'Gear') {
-            return <Gear />;
-        }
-        if (currentPage === 'Food') {
-            return <Food />;
-        }
-        if (currentPage === 'Health') {
-            return <Health />;
-        }
         if (currentPage === 'Login') {
             return <Login />;
         }
-        if (currentPage === 'Checkout') {
-            return <Checkout />
+        if (currentPage === 'Signup') {
+            return <Signup />;
         }
-        return <Toys />;
+        
     };
 
     return (
         <div>
 
-            {/* We are passing the currentPage from state and the function to update it */}
-            <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-            {/* Here we are calling the renderPage method which will return a component  */}
-            {renderPage(currentPage)}
+            
+            <NavTabs currentPage={currentPage} handlePageChange={handlePageChange}></NavTabs>
+            
+            {renderPage()}
             <Footer></Footer>
         </div>
 

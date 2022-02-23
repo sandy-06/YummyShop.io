@@ -1,11 +1,11 @@
 const [photos] = useState([
     {
         name:"Blue Buffalo Tastefuls",
-        category: food
+        category: "food"
     },
     {
         name: "Blue Buffalo Dry dog Food",
-        category: food,  
+        category: "food",  
     },
     {
         name: "Cesar wet dog food",

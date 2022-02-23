@@ -24,6 +24,20 @@ export const ADD_USER = gql`
   }
 `;
 
+export const ADD_Product =gql`
+mutation addProduct($productData: ProductInput!) {
+  addProduct(productData: $productData) {
+    
+      productId
+      name
+      image
+      description
+      price
+      quantity
+  }
+}
+`
+
 export const SAVE_PRODUCTS = gql`
   mutation saveProduct($productData: ProductInput!) {
     saveProduct(productData: $productData) {

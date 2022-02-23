@@ -1,4 +1,4 @@
-const Admin = require("../models/users");
+const Admin = require("../models/User");
 const mongoose = require("mongoose");
 
 

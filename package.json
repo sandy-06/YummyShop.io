@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/sandy-06/YummyShop.io/issues"
   },
-  "homepage": "https://github.com/sandy-06/YummyShop.io#readme"
+  "homepage": "https://github.com/sandy-06/YummyShop.io#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
 }

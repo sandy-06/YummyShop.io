@@ -5,7 +5,7 @@ import Homepage from './pages/Homepage';
 import Footer from './Footer';
 import Signup from './SignUp'
 import Login from './Login';
-import Checkout from './pages/Checkout';
+
 
 export default function StoreContainer() {
     const [currentPage, setCurrentPage] = useState('Homepage');

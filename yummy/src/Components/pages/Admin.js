@@ -1,7 +1,7 @@
 import React from "react";
 import { useMutation } from '@apollo/client';
 //import user;
-import Auth from '../utils/auth';
+
 import { ADD_Product } from "../../utils/mutations";
 function adminPage () 
     //if user is admin allow to see page

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap';
 
 function NavTabs({ currentPage, handlePageChange,}) {
   return (
@@ -15,7 +16,10 @@ function NavTabs({ currentPage, handlePageChange,}) {
 
         <ul className="uk-navbar-nav">
           <li>
-            <p onclick={currentPage ='Login'}>Login</p>
+           <Button onClick={() =>handlePageChange('Login') }>Login</Button> 
+          </li>
+          <li>
+            <Button onClick={() =>handlePageChange('Signup') }>Signup</Button> 
           </li>
           <li><a href="Cart">Cart</a></li>
         </ul>

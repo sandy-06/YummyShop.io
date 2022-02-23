@@ -14,9 +14,9 @@ export const getSavedProductIds = () => {
     }
   };
   
-  export const removeBookId = (bookId) => {
-    const savedBookIds = localStorage.getItem('saved_books')
-      ? JSON.parse(localStorage.getItem('saved_books'))
+  export const removeProductId = (productId) => {
+    const savedProductIds = localStorage.getItem('saved_product')
+      ? JSON.parse(localStorage.getItem('saved_product'))
       : null;
   
     if (!savedProductIds) {

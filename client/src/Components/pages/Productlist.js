@@ -41,7 +41,6 @@ return (
 
     </div>
 );
-};
 
 
 export default PhotoList;

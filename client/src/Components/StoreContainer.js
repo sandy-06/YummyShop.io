@@ -10,7 +10,7 @@ import Login from './Login';
 import Checkout from './pages/Checkout';
 
 export default function StoreContainer() {
-    const [currentPage, setCurrentPage] = useState('Login');
+    const [currentPage, setCurrentPage] = useState('Homepage');
 
     const page = 'Homepage'
 

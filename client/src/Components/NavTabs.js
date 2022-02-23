@@ -1,6 +1,12 @@
 import React from 'react'
 
 function NavTabs({ currentPage, handlePageChange,}) {
+
+    function changepage(clickdata) {
+      e.preventDefault();
+      currentPage = clickdata
+      console.log(clickdata)
+    }
   return (
     <nav className="uk-navbar-container" uk-navbar="true">
 
@@ -15,15 +21,13 @@ function NavTabs({ currentPage, handlePageChange,}) {
 
         <ul className="uk-navbar-nav">
           <li>
-            <p onclick={currentPage ='Login'}>Login</p>
+            <a href="Login">Login</a>
           </li>
           <li><a href="Cart">Cart</a></li>
         </ul>
       </div>
     </nav>
   );
-
-    
 
 }
 

@@ -9,7 +9,7 @@ import {
 import { setContext } from '@apollo/client/link/context';
 
 
-import StoreContainer from './Components/Storedog';
+import StoreContainer from './Components/StoreComponent';
 
 
 // Construct our main GraphQL API endpoint

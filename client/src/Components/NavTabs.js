@@ -2,6 +2,12 @@ import React from 'react'
 import { Button } from 'react-bootstrap';
 
 function NavTabs({ currentPage, handlePageChange,}) {
+
+    function changepage(clickdata) {
+      e.preventDefault();
+      currentPage = clickdata
+      console.log(clickdata)
+    }
   return (
     <nav className="uk-navbar-container" uk-navbar="true">
 
@@ -16,6 +22,7 @@ function NavTabs({ currentPage, handlePageChange,}) {
 
         <ul className="uk-navbar-nav">
           <li>
+            <a href="Login">Login</a>
            <Button onClick={() =>handlePageChange('Login') }>Login</Button> 
           </li>
           <li>
@@ -26,8 +33,6 @@ function NavTabs({ currentPage, handlePageChange,}) {
       </div>
     </nav>
   );
-
-    
 
 }
 

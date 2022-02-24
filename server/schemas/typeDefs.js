@@ -17,6 +17,7 @@ const typeDefs = gql`
     quantity: Int
     category: String
     image: String
+    description: String
   }
   type Cart {
     _id: ID
@@ -37,8 +38,10 @@ const typeDefs = gql`
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    
+    addProduct(name:String!, image:String!, description:String!, price:Int, quantity: Int):Product
+    deleteProduct(productId:ID):Product
   }
+
 `;
 
 module.exports = typeDefs;

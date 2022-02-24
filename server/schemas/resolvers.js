@@ -6,9 +6,13 @@ const { signToken } = require('../utils/auth')
 const { AuthenticationError } = require('apollo-server-express');
 
 const resolvers = {
-    Query:{
-        //Logic
-    },
+  Query: {
+    products: async () => {
+      return await Product.find()      
+    }
+
+     // throw new AuthenticationError('Not logged in');
+  },
     Mutation:{
         addUser: async (parent, args) => {
             const user = await User.create(args);
@@ -29,8 +33,20 @@ const resolvers = {
             }
           
             return user;
-          }
-    }
-} 
+          },
+          addProduct: async (parent, args) => {
+            const product = await Product.create(args);
+            return product;
+
+          },
+          deleteProduct:async () => {
+            return await Product.findByIdAndDelete()
+
+          },
+        }  
+      }
+  
+
+  
   
   module.exports = resolvers;

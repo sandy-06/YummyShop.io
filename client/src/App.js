@@ -10,7 +10,7 @@ import { setContext } from '@apollo/client/link/context';
 
 import StoreContainer from './Components/StoreContainer'
 
-import Landing from './Components/pages/Homepage';
+import Landing from './pages/Homepage';
 import Login from './Components/Login';
 import Cart from './pages/Cart';
 import Footer from './Components/Footer';
@@ -52,3 +52,4 @@ function App() {
 }
 
 export default App;
+

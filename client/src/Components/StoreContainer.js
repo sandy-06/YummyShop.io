@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
-import Homepage from './pages/Homepage';
+import Homepage from '../pages/Homepage';
 
 import Footer from './Footer';
 import Signup from './SignUp'

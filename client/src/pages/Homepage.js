@@ -1,6 +1,5 @@
 import React from "react";
-import Information from "../Information";
-
+//import Information from "../Components/Information";
 function Homepage() {
 
     return (
@@ -10,7 +9,7 @@ function Homepage() {
                 <li class="uk-active" uk-filter-control=''><a href="#">All Products</a></li>
                 <li uk-filter-control="[data-color='white']"><a href="#">Food</a></li>
                 <li uk-filter-control="[data-color='blue']"><a href="#">Toys</a></li>
-                <li uk-filter-control="[data-color='black']"><a href="#">Accessories</a></li>
+                <li uk-filter-control="[data-color='black']"><a href="#">Gear</a></li>
                 <li uk-filter-control="[data-color='Health']"><a href="#">Health</a></li>
             </ul>
 
